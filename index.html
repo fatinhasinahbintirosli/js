@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="X-Frame-Bypass: Web Component extending IFrame to bypass X-Frame-Options: deny/sameorigin">
+	<title>X-Frame-Bypass Web Component Demo</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			overflow: hidden;
+		}
+		iframe {
+			/* display: block; */
+			width: calc(100% - 40px);
+			height: calc(100% - 40px);
+			margin: 20px;
+		}
+	
+	</style>
+	<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+	<script src="./x-frame-bypass.js"></script>
+	<script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+
+</head>
+<body>
+	<iframe is="x-frame-bypass" src="https://shopee.com.my/Home-Appliances-cat.11000824/"></iframe>
+
+</body>
+</html>
