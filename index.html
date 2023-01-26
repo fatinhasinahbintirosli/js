@@ -13,20 +13,22 @@
 			overflow: hidden;
 		}
 		iframe {
-			/* display: block; */
+			display: block;
 			width: calc(100% - 40px);
 			height: calc(100% - 40px);
 			margin: 20px;
 		}
-	
+		img {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	</style>
 	<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
-	<script src="./x-frame-bypass.js"></script>
-	<script type="module" src="https://unpkg.com/x-frame-bypass"></script>
-
+	<script src="x-frame-bypass.js" type="module"></script>
 </head>
 <body>
-	<iframe is="x-frame-bypass" src="http://siakapkeli.ws/s-kitchenz-deli"></iframe>
-
+	<iframe is="x-frame-bypass" src="https://siakapkeli.ws/shopee2/"></iframe>
+	
 </body>
 </html>
